@@ -68,10 +68,12 @@ Both algorithms produce:
 
 
 ▶️ Run Instructions
-
+```
 mvn clean compile
-mvn exec:java -Dexec.mainClass="org.example.Main"
 
+
+mvn exec:java -Dexec.mainClass="org.example.Main"
+```
 
 📊 Conclusion
 Both algorithms produce the same MST cost.
