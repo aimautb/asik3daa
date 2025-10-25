@@ -1,8 +1,0 @@
-org\example\algorithms\KruskalAlgorithm.class
-org\example\Main.class
-org\example\algorithms\KruskalAlgorithm$DisjointSet.class
-org\example\util\JSONWriter.class
-org\example\models\Graph.class
-org\example\models\Edge.class
-org\example\algorithms\PrimAlgorithm.class
-org\example\util\JSONReader.class

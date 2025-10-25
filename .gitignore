@@ -1,4 +1,36 @@
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Log files
+*.log
+hs_err_pid*
+replay_pid*
+
+# Build output
+target/
+build/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Maven
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+mvnw
+mvnw.cmd
+
 ### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
@@ -24,6 +56,31 @@ bin/
 
 ### VS Code ###
 .vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-### Mac OS ###
+### OS ###
+# Mac OS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+### Gradle ###
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+### Other ###
+*.orig
+*.swp
+*.swo
+*~
