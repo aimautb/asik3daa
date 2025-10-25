@@ -26,7 +26,6 @@ public class PrimAlgorithm {
         String startNode = graph.nodes.get(0);
         visited.add(startNode);
 
-        // Добавляем все рёбра из начальной вершины
         for (Edge e : graph.edges) {
             if (e.from.equals(startNode) || e.to.equals(startNode)) {
                 pq.add(e);
@@ -44,7 +43,6 @@ public class PrimAlgorithm {
             visited.add(nextNode);
             mst.add(edge);
 
-            // Добавляем рёбра из новой вершины
             for (Edge e : graph.edges) {
                 if ((e.from.equals(nextNode) && !visited.contains(e.to)) ||
                         (e.to.equals(nextNode) && !visited.contains(e.from))) {

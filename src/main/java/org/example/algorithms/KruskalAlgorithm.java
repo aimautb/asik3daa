@@ -44,14 +44,14 @@ public class KruskalAlgorithm {
         for (Edge edge : sortedEdges) {
             String rootA = ds.find(edge.from);
             String rootB = ds.find(edge.to);
-            operations++; // find/comparison
+            operations++;
 
             if (rootA == null || rootB == null) continue;
 
             if (!rootA.equals(rootB)) {
                 mst.add(edge);
                 ds.union(rootA, rootB);
-                operations++; // union
+                operations++;
             }
 
             if (mst.size() == graph.nodes.size() - 1)
